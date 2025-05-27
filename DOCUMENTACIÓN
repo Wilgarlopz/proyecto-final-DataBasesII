@@ -1,0 +1,37 @@
+proyecto-final-DataBasesII
+El proyecto esta orientado a dar una solución para Envizo una tienda que hace labores de redes pero maneja su inventario de manera fisica, igualmente sus pedidos, para el cual se hace un aplicativo web con laravel conectado a una base de datos php my admin en sql,que da solución a la gestion de pedidos e inventarios.
+🧾 Guía de Usuario 🖥️ Requisitos para usar el aplicativo Antes de iniciar, asegúrate de tener lo siguiente instalado en tu computador:
+XAMPP o Laragon (para usar Apache y MySQL)
+Composer (para gestionar dependencias de Laravel
+Laravel instalado
+Navegador web (Chrome, Firefox, etc.)
+⚙️ Cómo iniciar el aplicativo Iniciar los servicios
+Abre XAMPP y da clic en Start en:
+Apache
+MySQL
+Abrir phpMyAdmin
+Ve a tu navegador y entra a: http://localhost/phpmyadmin
+Importar la base de datos
+En phpMyAdmin:
+Crea una base de datos con el nombre correspondiente (ej: miapp)
+Haz clic en la base de datos creada y luego en Importar
+Selecciona el archivo .sql del proyecto y haz clic en Continuar
+Configurar Laravel (si no está hecho)
+Abre la carpeta del proyecto en Visual Studio Code (u otro editor).
+Copia el archivo .env.example y renómbralo a .env
+Abre el archivo .env y modifica las siguientes líneas según el nombre de la base de datos:
+env Copiar Editar DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=miapp DB_USERNAME=root DB_PASSWORD= Instalar dependencias del proyecto
+Abre una terminal en la carpeta del proyecto y ejecuta:
+composer install Generar clave de aplicación
+En la misma terminal:
+php artisan key:generate Migrar tablas (si aplica)
+Ejecuta:
+php artisan migrate Levantar el servidor
+En la terminal:
+php artisan serve Aparecerá una dirección como:
+http://127.0.0.1:8000 Ábrela en el navegador para usar la aplicación.
+✅ Uso del sistema Una vez abierto el sistema, podrás:
+Iniciar sesión (si aplica)
+Navegar por el menú principal
+Ver, crear, editar o eliminar registros (dependiendo del módulo: productos, pedidos, etc.)
+
